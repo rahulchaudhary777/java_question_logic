@@ -1,0 +1,17 @@
+approach :- Two pointer approach
+
+formula :- area = base * min of two lines
+		
+		area => kitna pani store hoga
+		base => dono lines ke beech kina gap h
+	min of lines => choti line jitna hi pani store hoga.
+
+-> left & right 2 pointer lenge ( left < right )
+-> starting ke liye base => array_length-1 hoga kyoki dono lines left-most & right-most h
+
+-> area find krenge left & right index ke liye
+-> curr. area ko max-area ( res ) se compare krenge
+-> jo line choti hogi uska index+1 kr denge
+
+-> base-1 kr denge kyoki line km hone pe unke beech ka space bhi km hoga 
+
