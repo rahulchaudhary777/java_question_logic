@@ -1,0 +1,8 @@
+iske 2 logic h :- 
+
+1. brute force :- every index value ka square kro & fir arr ko increasing order m sort kr do.
+
+2. optimized :-  two pointer approach se. left 0 se start kro aur right len-1 se.
+                  compare karo arr left & right index ki values ko. ek new array banao. new-array ka index = len-1
+			yadi left index ki value bdi h to usse new-array m store kro aur left++ & new-array ka idx--;
+                  yadi right index ki value bdi h to usse new-array m store kro aur right-- & new-array ka idx--
