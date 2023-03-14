@@ -1,0 +1,14 @@
+approach :- binary search
+
+-> phele first element find krne ke liye binary-search uske baad last-element ke liye
+
+// for first position
+
+search target-element using binary search & jb element match ho jaye to use (mid) arr[0] m store kra do
+-> uske baad check kro ki mid ke left side m same elements h kya (right = mid-1) yadi h to arr[0] m vo mid-index store krte jao jb tk "left > right" na ho jaye
+
+
+// for last position
+
+same binary-search process & jb element match ho jaye to use arr[1] m store kra do
+uske baad check kro ki mid ke right side m same elements h kya (left = mid-+1) yadi h to arr[1] m vo mid-index store krte jao
