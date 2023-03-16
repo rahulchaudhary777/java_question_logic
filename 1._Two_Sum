@@ -1,0 +1,17 @@
+Approach :- using Hashmap
+
+ek map create krenge aur ek loop ke through each element ko traverse krenge
+
+--> yadi map ki key m 'target-nums[i]' (nums[i] :- curr. index value) present nhi h to map m (key -> curr. value, value -> curr. index) push krenge
+
+--> aur yadi map ki key m already 'target-nums[i]' value present h to new 2 size array ke 1st index pr curr. index store krenge
+                           &
+0th index ke liye map.get method se already present 'target-nums[i]' wali key ka index store krenge;
+
+
+input :- [3,2,5,4]   target = 6
+
+6-3 = 3  (not present)                              map :-  3 - 0 
+6-2 = 4  (not)                                              2 - 1
+6-5 = 1  (not)                                              5 - 2
+6-4 = 2  (already present)
