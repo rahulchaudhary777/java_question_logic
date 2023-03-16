@@ -1,0 +1,23 @@
+Approach :- using two-pointer
+
+1. yadi array ki len 3 se km hogi to 3sum find nhi hoga
+
+2. 3 pointer lenge (i, left, right)
+
+3. loop ke through array ko len-2 tk traverse krenge (kyoki yadi loop len-2 se jyada run hoga to 3 pointer nhi bn payenge)
+
+    len-2 -> 1st pointer
+    len-1 -> 2nd pointer
+    len-3 -> 3rd pointer
+
+4. inside for loop, while loop ke liye left = i+1, aur right = end array index lenge (two pointer approach)
+
+5. tino pointers ka sum > 0 toh right-- krenge (jisse sum ki value decrease ho) yadi sum < 0 toh left++;
+
+6. yadi sum == 0 hoga toh tino index ki array value ko arraylist m store krenge & left++;
+
+    duplicate ko remove krne ke liye ab left/right ki next values ko check krke jb tk increase/decrease krenge jb tk next value previous se diff. na ho
+
+7. jb while loop ki cycle puri hogi to for loop ke i ke liye same duplicate check krenge.
+
+
