@@ -15,3 +15,4 @@ c). ab curr.-index-value ko target se match krayenge yadi match hoti h to return
 d). yadi value bdi h to next-row m check krenge (row++);
 
 e). yadi choti h to pre-col m check krenge (col--);
+
