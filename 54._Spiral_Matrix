@@ -1,0 +1,23 @@
+approach :- print boundary values
+
+1. sbse phele 4 value lenge
+    max-row = arr.length-1,       min-row = 0
+	max-col = arr[0].length-1,      min-col = 0
+
+2. ab pheli boundary (top-left -> top-right) ko print kraenge {row same rhegi (min-row) & col ki value change hongi.
+    min-row++;  kr denge (kyoki top-left -> top-right min-row ke all elements print ho gye h)
+
+3. ab 2nd boundary (top-right -> bottom-right) ko print kraenge {col same rhegi (max-col) & row ki value change hongi.
+   max-col--;
+
+4. ab 3rd boundary (bottom-right -> bottom-left) ko print kraenge {row same rhegi (max-row) & col ki value change hongi.
+   max-row--;
+
+5. ab 4th boundary (bottom-left -> top-left) ko print kraenge {col same rhegi (min-col) & row ki value change hongi.
+   min-col++;
+
+6. ab in boundary loops ko ek while loop m tb tk run krenge jb tk count < arr ke elements
+
+7. is condition ko each boundary loop m bhi dalenge.
+
+
