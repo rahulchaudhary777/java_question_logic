@@ -1,0 +1,13 @@
+approach :- sliding window approach
+
+1. ek set-collection-framework bnayenge aur 3 varible left = 0, right = 0, max = 0 lenge
+
+2. right ko string ke end tk each element ke liye iterate krenge
+
+3. yadi pariticular character of string ko set m add krne pr true aata h (means set m already esa koi character nhi h) 
+    toh max (us particular substring m kitne char h) ki value calculate krenge
+    formula :- Math.max(max, right-left+1)
+    & right++ krenge
+
+4. yadi false return hota h toh left pointer ki value ko increase krke set se element ko tb tk remove krenge jb tk ki vo particular duplicate character remove na ho jaye
+
