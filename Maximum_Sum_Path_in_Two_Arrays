@@ -1,0 +1,15 @@
+approach :- 
+
+1. i & j 2 pointer lenge. i array-1 ka starting index hoga, j array-2 ka
+
+2. p & q variables i & j ki starting values store krenge after getting same value of array for i & j.
+
+3. i & j index ki value compare krenge aur jo value choti hogi uska index (i / j ka index) bda denge
+
+4. jb i-index & j-index ki value equal hongi to both array ka sum find krenege using curr.-index (i/j) & previous=index (p/q)
+
+5. ab both subarray ki values ke sum m se max wala new-sum vaiable m jod denge
+
+6. yadi i ya j m se koi index array ke end tk phuche jata h to dusre index (j ya i) ki remaing all value (p -> i / q -> j) ko new-sum m jod lenge
+
+7. new-sum ko return kra denge
