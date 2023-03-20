@@ -1,0 +1,67 @@
+import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        while(n-- > 0){
+            int len1 = sc.nextInt();
+            int len2 = sc.nextInt();
+
+            int []arr1 = new int[len1];
+            int []arr2 = new int[len2];
+
+            for(int i=0;i<len1;i++){
+                arr1[i] = sc.nextInt();
+            }
+            for(int i=0;i<len2;i++){
+                arr2[i] = sc.nextInt();
+            }
+
+            // main logic
+            int i = 0, j = 0;
+            int start1 = 0, start2 = 0;
+            int sum = 0;
+
+            while(i < len1 && j < len2){
+                if(arr1[i] > arr2[j])j++;
+                else if(arr1[i] < arr2[j])i++;
+                else{
+                    int sum1 = 0, sum2 = 0;
+                    for(int a=start1;a<=i;a++){
+                        sum1 += arr1[a];
+                    }
+                    for(int b=start2;b<=j;b++){
+                        sum2 += arr2[b];
+                    }
+                    sum += Math.max(sum1, sum2);
+                    i++; j++;
+                    start1 = i; start2 = j;
+                }
+            }
+            if(i == len1){
+                for(int x=start2;x<len2;x++){
+                    sum += arr2[x];
+                }
+            }
+            if(j == len2){
+                for(int x=start1;x<len1;x++){
+                    sum += arr1[x];
+                }
+            }
+            System.out.println(sum);
+        }
+    }
+}
+
+
+/*
+i/p :-
+1
+8 8
+2 3 7 10 12 15 30 34
+1 5 7 8 10 15 16 19
+
+o/p :- 122
+*/
