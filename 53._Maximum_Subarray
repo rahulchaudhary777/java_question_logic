@@ -1,0 +1,22 @@
+approach :- kadens algorithem
+
+// brute-force approach  (using 2 loop's)
+
+1. sbse phele 1st loop total array ko traverse krege
+
+2. 2nd loop i se remaing array ko traverse krega & each time element ko sum m add krega
+
+3. each time sum ko max variable se compare krenge
+
+4. inside loop ke each complete traversal pr sum ki value ko 0 se reset krenge
+
+
+// optimal approach (kaden's algo)
+
+1. loop array ka traversal krega & array-element ko sum m add krega 
+
+2. ab sum ko each time max se check krenge
+
+3. yadi sum ki value -ive ho jati h to sum=0 krenge
+   (kyoki sum ke -ive hone pr yadi usko next element se add krenge to sum next element ki value ko overall decrease hoga-
+    -isse accha h ki only next +ive element ko hi sum m add kre)
