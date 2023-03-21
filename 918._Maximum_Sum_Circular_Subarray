@@ -1,0 +1,20 @@
+approach :- kadan's algorithem
+
+1. sbse phele kadan's algo ke through linear array ke liye maximum subarray sum calculate krenge
+
+2. ab complete array ke elements ka sum find krenge
+
+3. then array ke elements ka sign (-ive -> +ive / +ive -> -ive) ke denge
+
+4. ab updated array (element-sigh changed) ke liye kadan's algo se maximum-sum of subarray calculate krenge
+
+5. ab sum & inverse-array ka max-sum ko add krenge jo ki circular subarray ka max hoga
+{kyoki actual array ka vo part jo sum ko negative kr rha tha usse total-sum se htane ke liya utni hi value ko (max-sum of sign-inverse-array) add kr denge}
+
+Ex :- [ 2 3 -5 -7 11 2 -3 ] isme (-5 , -7) value ko decrease kr rhe h toh is value ko total-sum (3) se htane ke liye {-(-5)+ -(-7) => 12} jod denge 
+means { 15 - 5 - 7 } + 12 = 15
+
+6. ab linear-sum & circular-sum m se max find krke return kra dwnge.
+
+
+kadan's algo :- array ko traverse kro aur each element ko add kro & each time sum ko max se compare kro. yadi sum < 0 ho jaye to sum ko 0 pr reset kr do
