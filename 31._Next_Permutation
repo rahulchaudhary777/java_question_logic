@@ -1,0 +1,18 @@
+approach :- 
+
+i/p :- 4 3 2 7 4 3 1
+
+1. sbse phele piche se check krenege ki element i+1 > i to us i indexko ek variable 'p' m store krenge
+    (kyoki yadi element i+1 < i aur hum swap krne ke liye i ko lenge to after swapping value chote milegi)
+    Ex :- 1 3 2 => {after swap (3, 2)} -> 1 2 3
+
+2. ab array ke last se us p index tk p-index-element se just bdi value find krenge & usse 'q' m store kraenge
+
+3. ab check krenge ki yadi p=0 & q=0 h means all values are in decreasing order toh just simply array ko reverse kr denge
+aur return kr denge (function termination ke liye)
+
+4. yadi p=0 & q=0 nhi h toh p-index-element & q-index-element ko swap kr denge (jisse curr. digit se greater value milegi)
+
+5. but just bdi value ke liye p-index-element se aage se remaining subArray to reverse kra denge
+
+6. finally hmme curr. digit se just bdi digit mil jayegi 
