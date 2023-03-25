@@ -1,0 +1,8 @@
+approach :- 
+
+1. ek new array same sixe ki bnani h aur loop ko complete array ki liye traverse kraker old array ki index-value ko new-array m as a index use krke us pr loop ka i(old-array ka index) store krana h
+
+arr[] -> old-array
+res[] -> new-array
+
+res[arr[i]] = i;
